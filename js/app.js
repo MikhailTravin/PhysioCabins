@@ -6030,7 +6030,13 @@ PERFORMANCE OF THIS SOFTWARE.
                 gallery,
                 galleryClass: lightgallery_es5(gallery, {
                     licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
-                    speed: 500
+                    speed: 500,
+                    mobileSettings: {
+                        controls: false,
+                        showCloseIcon: false,
+                        download: false,
+                        rotate: false
+                    }
                 })
             });
         }));

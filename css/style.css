@@ -530,15 +530,12 @@ body::after {
 .popup_show {
   z-index: 150;
   visibility: visible;
-  overflow: auto;
   pointer-events: auto;
 }
 
 .popup_show .popup__content {
   visibility: visible;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  opacity: 1;
 }
 
 .popup__wrapper {
@@ -565,15 +562,12 @@ body::after {
 }
 
 .popup__content {
+  position: relative;
   visibility: hidden;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  -o-transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
   background-color: #ffffff;
   width: 100%;
   max-width: 600px;
@@ -2297,9 +2291,9 @@ h2 {
   background: -o-linear-gradient(top, rgba(12, 140, 233, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%);
   background: linear-gradient(180deg, rgba(12, 140, 233, 0.18) 0%, rgba(255, 255, 255, 0.18) 100%);
   z-index: 100;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: background 0.3s ease 0s;
+  -o-transition: background 0.3s ease 0s;
+  transition: background 0.3s ease 0s;
 }
 
 .header._header-scroll {

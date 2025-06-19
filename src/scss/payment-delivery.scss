@@ -1,0 +1,190 @@
+//Оплата и доставка
+.payment-delivery {
+    padding: 0px 0px 100px 0px;
+    @media (max-width: $mobile) {
+        padding: 0px 0px 90px 0px;
+    }
+    // .payment-delivery__container
+    &__container {
+    }
+    // .payment-delivery__top
+    &__top {
+        margin: 0px 0px 30px 0px;
+        @media (max-width: $mobile) {
+            align-items: start;
+        }
+        h2 {
+            @media (max-width: $mobile) {
+                text-align: left;
+            }
+        }
+    }
+    // .payment-delivery__price
+    &__price {
+        display: none;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin: 6px 0px 0px 0px;
+        text-align: left;
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+    // .payment-delivery__content
+    &__content {
+    }
+    // .payment-delivery__body
+    &__body {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        background: #f9f9f9;
+        border-radius: 20px;
+        margin: 0px 0px 16px 0px;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            justify-content: start;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    // .payment-delivery__items
+    &__items {
+        flex: 0 1 650px;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+        }
+    }
+    // .payment-delivery__item
+    &__item {
+        padding: 30px;
+        @media (max-width: $mobile) {
+            padding: 25px 25px 20px 25px;
+        }
+    }
+    // .payment-delivery__images
+    &__images {
+        flex: 0 1 478px;
+        display: flex;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+        }
+    }
+    // .payment-delivery__image
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    // .payment-delivery__spollers
+    &__spollers {
+        flex-direction: column;
+        margin: -8px 0px;
+        @media (max-width: $mobile) {
+            margin: -5px 0px;
+        }
+        .spollers__spoller {
+            flex: 1 1 auto;
+            padding: 8px 0px;
+            @media (max-width: $mobile) {
+                padding: 5px 0px;
+            }
+        }
+    }
+}
+.item-payment-delivery {
+    // .item-payment-delivery__title
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        color: #181818;
+        margin: 0px 0px 12px 0px;
+    }
+    // .item-payment-delivery__desc
+    &__desc {
+    }
+    // .item-payment-delivery__text
+    &__text {
+        margin: 0px 0px 10px 0px;
+        &:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #3e3e3e;
+            span {
+                font-weight: 700;
+            }
+            @media (max-width: $mobile) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+//Гарантия
+.guarantee {
+    padding: 0px 0px 57px 0px;
+    @media (max-width: $mobile) {
+        padding: 0px 0px 46px 0px;
+    }
+    // .guarantee__container
+    &__container {
+    }
+    // .guarantee__top
+    &__top {
+        margin: 0px 0px 30px 0px;
+    }
+    // .guarantee__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -15px;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center;
+            margin: -15px 0px;
+        }
+    }
+    // .guarantee__column
+    &__column {
+        flex: 0 1 50%;
+        padding: 15px;
+        @media (max-width: $mobile) {
+            flex: 1 1 auto;
+            padding: 15px 0px;
+        }
+    }
+    // .guarantee__item
+    &__item {
+    }
+    // .guarantee__title
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 110%;
+        text-align: center;
+        color: $blue;
+        margin: 0px 0px 6px 0px;
+    }
+    // .guarantee__subtitle
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #3e3e3e;
+    }
+}

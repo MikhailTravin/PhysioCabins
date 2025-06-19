@@ -1,0 +1,42 @@
+.electrical-panels {
+    .left-info-products__item {
+        background: $blue;
+        p {
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 130%;
+            color: $white;
+            @media (max-width: $mobile) {
+                font-size: 16px;
+            }
+        }
+    }
+    .filter__content {
+        border-top: none;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .filter__products {
+        flex: 0 1 33.3333%;
+        width: 33.3333%;
+        @media (max-width: $tablet) {
+            flex: 0 1 50%;
+            width: 50%;
+        }
+    }
+    .products__titles {
+        margin: 0px 0px 6px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    .products__title {
+        font-weight: 700;
+    }
+    .swiper-pagination-bullet {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .swiper-pagination-bullet-active {
+        background: #898989;
+    }
+}

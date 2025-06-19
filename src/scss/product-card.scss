@@ -1,0 +1,608 @@
+//медицинские шторы
+.medical-curtains {
+    .main-product__lists {
+        padding: 50px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            padding: 23px 0px 0px 0px;
+        }
+    }
+    .documents__search {
+        background: #d9d9d9;
+        border: 1px solid #d9d9d9;
+    }
+}
+
+//========================================================================================================================================================
+
+//Информация карточка товара
+.info-product-card {
+    padding: 0px 0px 100px 0px;
+    @media (max-width: $mobile) {
+        padding: 0px 0px 0px 0px;
+    }
+    // .info-product-card__container
+    &__container {
+    }
+    // .info-product-card__content
+    &__content {
+    }
+    // .info-product-card__spollers
+    &__spollers {
+    }
+}
+
+//========================================================================================================================================================
+
+//С этим товаром используют
+.used-products {
+    .products__item {
+        background: #f6f6f6;
+        padding: 20px;
+        @media (max-width: $mobile) {
+            padding: 15px;
+        }
+    }
+    .products__image {
+        img {
+            height: 145px;
+            @media (max-width: 600px) {
+                height: 252px;
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .swiper-pagination-bullet-active {
+        background: #898989;
+    }
+}
+
+//========================================================================================================================================================
+
+//Документы
+.documents {
+    padding: 0px 0px 100px 0px;
+    @media (max-width: $mobile) {
+        padding: 0px 0px 90px 0px;
+    }
+    // .documents__container
+    &__container {
+    }
+    // .documents__top
+    &__top {
+        margin: 0px 0px 34px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+    // .documents__body
+    &__body {
+    }
+    // .documents__slider
+    &__slider {
+        @media (max-width: $pc) {
+            margin: 0px -20px;
+            padding: 0px 20px;
+        }
+    }
+    // .documents__wrapper
+    &__wrapper {
+    }
+    // .documents__slide
+    &__slide {
+        position: relative;
+        margin: 0px 0px 20px 0px;
+        border: 1px solid #b8b8b8;
+        border-radius: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &:hover {
+            .documents__search {
+                border: 1px solid $blue;
+                background: $blue;
+                &::before {
+                    color: $white;
+                }
+            }
+        }
+    }
+    // .documents__search
+    &__search {
+        position: absolute;
+        bottom: -19px;
+        right: -6px;
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+        border: 1px solid #b8b8b8;
+        transition: all 0.3s ease 0s;
+        &::before {
+            font-size: 20px;
+            color: #000000;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+//Цвета
+.colors {
+    padding: 0px 0px 90px 0px;
+    @media (max-width:$mobile){
+         padding: 90px 0px 90px 0px; 
+    }
+    // .colors__container
+    &__container {
+    }
+    // .colors__top
+    &__top {
+        margin: 0px 0px 35px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+    // .colors__content
+    &__content {
+    }
+    // .colors__body
+    &__body {
+        border: 1px solid #d7d7d7;
+        border-radius: 30px;
+        padding: 25px;
+        margin: 0px 0px 20px 0px;
+        &:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: $tablet) {
+            border: none;
+            padding: 0px 0px 0px 0px;
+            border-radius: 0px;
+            margin: 0px 0px 0px 0px;
+            &:nth-child(n + 2) {
+                display: none;
+            }
+        }
+    }
+    // .colors__columns
+    &__columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -10px;
+        @media (max-width: $tablet) {
+            justify-content: start;
+        }
+        @media (max-width: $mobile) {
+            margin: -13px -9px;
+        }
+    }
+    // .colors__column
+    &__column {
+        flex: 0 1 auto;
+        padding: 10px;
+        @media (max-width: $tablet) {
+            flex: 0 1 25%;
+        }
+        @media (max-width: $mobile) {
+            padding: 13px 9px;
+            flex: 0 1 33.3333%;
+        }
+        @media (max-width: 390px) {
+            flex: 0 1 50%;
+        }
+    }
+    // .colors__item
+    &__item {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 156%;
+            text-align: center;
+            color: #212121;
+            @media (max-width: $mobile) {
+                font-size: 15px;
+            }
+        }
+    }
+    // .colors__image
+    &__image {
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 18px 0px;
+        }
+        img {
+            width: 124px;
+            height: 124px;
+            object-fit: cover;
+            border-radius: 50%;
+            @media (max-width: $mobile) {
+                width: 104px;
+                height: 104px;
+            }
+        }
+    }
+    // .colors__text
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #1d1d1d;
+        margin: 27px 0px 0px 0px;
+        @media (max-width: $mobile) {
+            margin: 31px 0px 0px 0px;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+//Примеры работ
+.examples-work {
+    padding: 0px 0px 112px 0px;
+    @media (max-width: $mobile) {
+        padding: 0px 0px 90px 0px;
+    }
+    // .examples-work__container
+    &__container {
+    }
+    // .examples-work__top
+    &__top {
+        margin: 0px 0px 40px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+    // .examples-work__body
+    &__body {
+    }
+    // .examples-work__images
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -10px;
+        @media (max-width: $mobile) {
+            margin: -5px;
+        }
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+            margin: -9px 0px;
+        }
+    }
+    // .examples-work__image
+    &__image {
+        flex: 1 1 33.3333%;
+        padding: 10px;
+        @media (max-width: $tablet) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: $mobile) {
+            padding: 5px;
+        }
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 auto;
+            padding: 9px 0px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            min-height: 220px;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+//Рекомендации по уходу
+.recommendations-care {
+    padding: 0px 0px 86px 0px;
+    // .recommendations-care__container
+    &__container {
+    }
+    // .recommendations-care__top
+    &__top {
+        margin: 0px 0px 13px 0px;
+        align-items: start;
+        @media (max-width: $tablet) {
+            align-items: center;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 20px 0px;
+        }
+        h2 {
+            text-align: left;
+            @media (max-width: $tablet) {
+                text-align: center;
+            }
+        }
+    }
+    // .recommendations-care__content
+    &__content {
+        display: flex;
+        align-items: start;
+    }
+    // .recommendations-care__body
+    &__body {
+        flex: 0 1 600px;
+        margin: 0px 15px 0px 0px;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    // .recommendations-care__title
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        color: #181818;
+        margin: 0px 0px 14px 0px;
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+    // .recommendations-care__subtitle
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #3e3e3e;
+        margin: 0px 0px 22px 0px;
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
+        @media (max-width: $mobile) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    // .recommendations-care__lists
+    &__lists {
+        margin: -8px 0px;
+    }
+    // .recommendations-care__list
+    &__list {
+        display: flex;
+        align-items: center;
+        padding: 8px 0px;
+        span {
+            display: block;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            color: #3e3e3e;
+        }
+    }
+    // .recommendations-care__images
+    &__images {
+        flex: 0 1 543px;
+        margin: 0px 0px 0px 60px;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            border-radius: 20px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .recommendations-care__image
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 40px;
+        margin: 0px 20px 0px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 13px 0px 0px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+//Электрические щитки
+.electrical-panels-card {
+    padding: 0px 0px 60px 0px;
+    @media (max-width: $mobile) {
+        padding: 0px 0px 90px 0px;
+    }
+    // .electrical-panels-card__container
+    &__container {
+    }
+    // .electrical-panels-card__content
+    &__content {
+        display: flex;
+        align-items: start;
+        @media (max-width: $tablet) {
+            flex-direction: column-reverse;
+        }
+    }
+    // .electrical-panels-card__sliders
+    &__sliders {
+        flex: 0 1 540px;
+        position: relative;
+        min-width: 0;
+        margin: 22px 60px 0px 0px;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+            width: 100%;
+            margin: 0px 0px 0px 0px;
+        }
+        .arrow-prev {
+            width: 21px;
+            height: 21px;
+            left: -10px;
+            &::before {
+                font-size: 9px;
+            }
+            @media (max-width: $mobile) {
+                width: 18px;
+                height: 18px;
+                &::before {
+                    font-size: 8px;
+                }
+            }
+        }
+        .arrow-next {
+            width: 21px;
+            height: 21px;
+            right: -10px;
+            &::before {
+                font-size: 9px;
+            }
+            @media (max-width: $mobile) {
+                width: 18px;
+                height: 18px;
+                &::before {
+                    font-size: 8px;
+                }
+            }
+        }
+        .swiper-pagination-bullet {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .swiper-pagination-bullet-active {
+            background: #898989;
+        }
+    }
+    // .electrical-panels-card__slider
+    &__slider {
+    }
+    // .electrical-panels-card__wrapper
+    &__wrapper {
+    }
+    // .electrical-panels-card__slide
+    &__slide {
+    }
+    // .electrical-panels-card__image
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .electrical-panels-card__pagination
+    &__pagination {
+    }
+    // .electrical-panels-card__arrow-prev
+    &__arrow-prev {
+    }
+    // .electrical-panels-card__arrow-next
+    &__arrow-next {
+    }
+    // .electrical-panels-card__body
+    &__body {
+        flex: 0 1 600px;
+        @media (max-width: $tablet) {
+            flex: 1 1 auto;
+            margin: 0px 0px 27px 0px;
+        }
+    }
+    // .electrical-panels-card__top
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0px 0px 33px 0px;
+        @media (max-width: $mobile) {
+            margin: 0px 0px 27px 0px;
+        }
+        h1 {
+            font-size: 31px;
+            margin: 0px 0px 20px 0px;
+            @media (max-width: $mobile) {
+                font-size: 25px;
+                margin: 0px 0px 6px 0px;
+            }
+            @media (max-width: 390px) {
+                word-break: break-all;
+            }
+        }
+    }
+    // .electrical-panels-card__price
+    &__price {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $mobile) {
+            font-size: 19px;
+            margin: 0px 0px 27px 0px;
+        }
+    }
+    // .electrical-panels-card__button
+    &__button {
+        font-size: 13px;
+        width: 253px;
+        padding: 21px;
+        @media (max-width: $mobile) {
+            font-size: 16px;
+            padding: 18px;
+        }
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+    // .electrical-panels-card__desc
+    &__desc {
+        margin: -18px 0px;
+        @media (max-width: $mobile) {
+            margin: -12px 0px;
+        }
+    }
+    // .electrical-panels-card__column
+    &__column {
+        padding: 18px 0px;
+        @media (max-width: $mobile) {
+            padding: 12px 0px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: #222222;
+        }
+    }
+    // .electrical-panels-card__title
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        color: #181818;
+        margin: 0px 0px 12px 0px;
+        @media (max-width: $mobile) {
+            font-size: 18px;
+        }
+    }
+}
+.electrical-panels-product-card {
+    .questions {
+        display: none;
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+}

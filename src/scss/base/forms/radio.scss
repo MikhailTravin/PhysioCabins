@@ -1,0 +1,135 @@
+.options {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	// .options__item
+	&__item {
+		position: relative;
+		cursor: pointer;
+		margin: 0px 0px 10px 0px;
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	// .options__input
+	&__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+		&:checked + .options__label:after {
+			transform: scale(1);
+		}
+	}
+	// .options__label
+	&__label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		&:before {
+			content: "";
+			align-self: flex-start;
+			width: 20px;
+			height: 20px;
+			flex: 0 0 20px;
+			border-radius: 50%;
+			border: 2px solid $blue;
+		}
+		&:after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			transform: scale(0);
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: $blue;
+			position: absolute;
+			left: 5px;
+			top: 5px;
+		}
+	}
+	// .options__text
+	&__text {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 120%;
+		color: #001c3d;
+		text-align: left;
+		margin: 0px 0px 0px 10px;
+	}
+	// .options__image
+	&__image {
+		background: #d9d9d9;
+		flex: 0 0 126px;
+		width: 100%;
+		border-radius: 10px;
+		border: 2px solid transparent;
+		img {
+			width: 100%;
+			height: 126px;
+			object-fit: cover;
+			border-radius: 10px;
+			@media (max-width: $mobileSmall) {
+				height: 162px;
+			}
+			@media (max-width: 390px) {
+				height: 120px;
+			}
+		}
+		@media (max-width: $mobileSmall) {
+			flex: 0 0 162px;
+		}
+		@media (max-width: 390px) {
+			flex: 0 0 120px;
+		}
+	}
+}
+
+.options-image {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -8px;
+	@media (max-width: $mobile) {
+		margin: -3px -11px;
+	}
+	@media (max-width: 390px) {
+		margin: -3px;
+	}
+	.options__item {
+		flex: 0 1 20%;
+		padding: 8px;
+		@media (max-width: $mobile) {
+			flex: 0 1 33.3333%;
+			padding: 3px 11px;
+		}
+		@media (max-width: $mobileSmall) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: 390px) {
+			padding: 3px;
+		}
+	}
+	.options__input {
+		&:checked + .options__label .options__image {
+			border: 2px solid $blue;
+		}
+	}
+	.options__label {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: start;
+		&::before {
+			content: "";
+			display: none;
+		}
+		&::after {
+			content: "";
+			display: none;
+		}
+	}
+	.options__text {
+		font-weight: 500;
+		margin: 6px 0px 0px 0px;
+	}
+}
